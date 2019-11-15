@@ -11,7 +11,7 @@
 
 <body>
     <header class="main-header">
-        <img src="#" class="header-logo" width="154" height="64" alt="Логотип города Седона">
+        <img src="https://via.placeholder.com/150x150" class="header-logo" width="154" height="64" alt="Логотип города Седона">
         <nav class="main-header__navigation">
             <button type="button" class="main-header__toggle"> <span class="visually-hidden">Открыть меню</span></button>
             <img src="#" class="main-header__logo logo" width="154" height="64" alt="Логотип города Седона">
@@ -37,10 +37,9 @@
 
     <main>
         <h1 class="visually-hidden">Форма отзыва</h1>
-        <img src="#" alt="">
-
-        <b>Оставьте свой отзыв</b>
-        <p>Помогите нашим отелям стать лучше! <span>оставьте отзыв о них, а также о посещенных вами достопримечательностях</span></p>
+        <img src="https://via.placeholder.com/150x150" alt="">
+        <b> Оставьте свой отзыв </b>
+        <p> Помогите нашим отелям стать лучше! <span> оставьте отзыв о них, а также о посещенных вами достопримечательностях</span> </p>
 
         <form action="https://echo.htmlacademy.ru" method="post" class="filter">
             <fieldset class="filter__name fieldset-name">
@@ -115,7 +114,21 @@
                 <label for="emotion">Опишите свои эмоции:</label>
                 <textarea name="emotion" id="emotion" cols="30" rows="10" placeholder="Опишите подробно все свои восторги "></textarea>
             </fieldset>
-            <button type="submit">Отправить отзыв</button>
+            <section class="popup">
+                <div class="feedback-sent visually-hidden">
+                    <h2 class="popup__title feedback-sent__title">Ваш отзыв отправлен!</h2>
+                    <p class="popup__intro feedback-sent__intro">
+                        Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+                    <button type="button" class="button feedback-sent__button">Закрыть окно</button>
+                </div>
+                <div class="feedback-error visually-hidden">
+                    <h2 class="popup__title feedback-error__title">Что-то пошло не так!</h2>
+                    <p class="popup__intro feedback-error__intro">
+                        Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+                    <button type="button" class="button feedback-error__button">Ок</button>
+                </div>
+            </section>
+            <button type="submit" class="button filter__button"> Отправить отзыв</button>
         </form>
     </main>
 
