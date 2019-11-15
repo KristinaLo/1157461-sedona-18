@@ -2,134 +2,121 @@
 <html lang="ru">
 
 <head>
-    <meta charset="utf-8">
-    <title>City of Sedona</title>
+    <<<<<<< HEAD <meta charset="utf-8">
+        =======
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>City of Sedona</title>
 </head>
 
 <body>
     <header class="main-header">
-        <img src="#" class="header-logo" width="154" height="64" alt="Логотип города Седона">
-        <nav class="main-header__navigation">
-            <button type="button" class="main-header__toggle"> <span class="visually-hidden">Открыть меню</span></button>
-            <ul class="main-header__list">
-                <li class="main-header__item">
-                    <a href="index.html">Главная</a>
-                </li>
-                <li class="main-header__item">
-                    <a href="photo.html">Фото и видео</a>
-                </li>
-                <li class="main-header__item">
-                    <a>Форма отзыва</a>
-                </li>
-                <li class="main-header__item">
-                    <a href="https://htmlacademy.ru/intensive/adaptive"> Html Academy</a>
-                </li>
-            </ul>
-        </nav>
+        <<<<<<< HEAD <img src="#" class="header-logo" width="154" height="64" alt="Логотип города Седона">
+            <nav class="main-header__navigation">
+                <button type="button" class="main-header__toggle"> <span class="visually-hidden">Открыть меню</span></button> =======
+                <img src="#" class="main-header__logo logo" width="154" height="64" alt="Логотип города Седона">
+                <nav class="main-header__navigation">
+                    <button type="button" class="main-header__toggle"><span class="visually-hidden">Открыть меню</span></button>
+
+                    <ul class="main-header__list">
+                        <li class="main-header__item">
+                            <a href="index.html">Главная</a>
+                        </li>
+                        <li class="main-header__item">
+                            <a href="photo.html">Фото и видео</a>
+                        </li>
+                        <li class="main-header__item">
+                            <a>Форма отзыва</a>
+                        </li>
+                        <li class="main-header__item">
+                            <a href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
+                        </li>
+                    </ul>
+                </nav>
     </header>
 
     <main>
         <h1 class="visually-hidden">Форма отзыва</h1>
         <img src="#" alt="">
-        <b> Оставьте свой отзыв </b>
-        <p> Помогите нашим отелям стать лучше! <span> оставьте отзыв о них, а также о посещенных вами достопримечательностях</span> </p>
+
+        <b>Оставьте свой отзыв</b>
+        <p>Помогите нашим отелям стать лучше! <span>оставьте отзыв о них, а также о посещенных вами достопримечательностях</span></p>
 
         <form action="https://echo.htmlacademy.ru" method="post" class="filter">
-            <fieldset class="filter__name">
+            <fieldset class="filter__name fieldset-name">
                 <legend>Представьтесь:</legend>
-                <ul class="filter__list">
-                    <li class="filter__item">
-                        <label for="first-name"> Имя*: </label>
+                <ul class="filter__list fieldset-name__list">
+                    <li class="filter__item fieldset-name__item">
+                        <label for="first-name">Имя*:</label>
                         <input type="text" id="first-name" placeholder="Петр">
-
                     </li>
-                    <li class="filter__item">
-                        <label for="last-name">  Фамилия*:   </label>
+                    <li class="filter__item fieldset-name__item">
+                        <label for="last-name">Фамилия*:</label>
                         <input type="text" id="last-name" placeholder="Иванов">
-
                     </li>
-                    <li class="filter__item">
-                        <label for="middle-name">  Отчество*: </label>
+                    <li class="filter__item fieldset-name__item">
+                        <label for="middle-name">Отчество*:</label>
                         <input type="text" id="middle-name" placeholder="Александрович">
-
                     </li>
                 </ul>
             </fieldset>
-
-            <fieldset class="filter__contacts">
-
+            <fieldset class="filter__contacts fieldset-contact">
                 <legend>Контактная информация:</legend>
-                <ul class="filter__list">
-                    <li class="filter__item">
-                        <label for="phone">  Контактный телефон*:  </label>
-                        <input type="text" name="phone" id="phone" placeholder="Введите телефон">
-
+                <ul class="filter__list fieldset-contact__list">
+                    <li class="filter__item fieldset-contact__item">
+                        <label for="phone">Контактный телефон*:</label>
+                        <input type="tel" name="phone" id="phone" placeholder="Введите телефон">
                     </li>
-                    <li class="filter__item">
-                        <label for="email">  Электронная почта*:  </label>
-                        <input type="text" name="email" id="email" placeholder="Введите e-mail">
-
+                    <li class="filter__item fieldset-contact__item">
+                        <label for="email">Электронная почта*:</label>
+                        <input type="email" name="email" id="email" placeholder="Введите e-mail">
                     </li>
                 </ul>
             </fieldset>
-
-            <fieldset class="filter__opinion">
-
-                <legend> Ваше общее впечатление:</legend>
-
-                <ul class="filter__list">
-                    <li class="filter__item">
-                        <label>  Скорее положительное
-                        <input type="radio" name="positively">
-                      </label>
+            <fieldset class="filter__opinion fieldset-opinion">
+                <legend>Ваше общее впечатление:</legend>
+                <ul class="filter__list fieldset-opinion__list">
+                    <li class="filter__item fieldset-opinion__item">
+                        <label for="positively">Скорее положительное</label>
+                        <input type="radio" name="positively" id="positively">
                     </li>
-                    <li class="filter__item">
-                        <label> Скорее отрицательное
-                          <input type="radio" name="negatively">
-                        </label>
+                    <li class="filter__item  fieldset-opinion__item">
+                        <label for="negatively">Скорее отрицательное</label>
+                        <input type="radio" name="negatively" id="negatively">
                     </li>
-                    <li class="filter__item">
-                        <label> Затрудняюсь ответить
-                            <input type="radio" name="complicated">
-                          </label>
+                    <li class="filter__item  fieldset-opinion__item">
+                        <label for="complicated">Затрудняюсь ответить</label>
+                        <input type="radio" name="complicated" id="complicated">
                     </li>
                 </ul>
             </fieldset>
-            <fieldset class="filter__attractions">
-
-                <legend> Посещенные достопримечательности: </legend>
-                <ul class="filter__attractions__list">
-                    <li class="filter__attractions__item">
-                        <label for="bridge">Мост Дьявола </label>
+            <fieldset class="filter__attractions fieldset-attractions">
+                <legend>Посещенные достопримечательности:</legend>
+                <ul class="filter__list fieldset-attractions__list">
+                    <li class="filter__item fieldset-attractions__item">
+                        <label for="bridge">Мост Дьявола</label>
                         <input type="checkbox" name="bridge" id="bridge">
-
                     </li>
-                    <li class="filter__attractions__item">
-                        <label for="mountain">Гора-Колокол  </label>
+                    <li class="filter__item fieldset-attractions__item">
+                        <label for="mountain">Гора-Колокол</label>
                         <input type="checkbox" name="mountain" id="mountain">
-
                     </li>
-                    <li class="filter__attractions__item">
-                        <label for="park">Слайд-парк   </label>
+                    <li class="filter__item fieldset-attractions__item">
+                        <label for="park">Слайд-парк</label>
                         <input type="checkbox" name="park" id="park">
-
                     </li>
-                    <li class="filter__attractions__item">
+                    <li class="filter__item fieldset-attractions__item">
                         <label for="rocks">Красные скалы</label>
                         <input type="checkbox" name="rocks" id="rocks">
-
                     </li>
                 </ul>
             </fieldset>
-            <fieldset class="filter__emotion">
-
-                <legend> Опишите свои эмоции:</legend>
-                <label for="emotion"> </label>
+            <fieldset class="filter__emotion fieldset-emotion">
+                <label for="emotion">Опишите свои эмоции:</label>
                 <textarea name="emotion" id="emotion" cols="30" rows="10" placeholder="Опишите подробно все свои восторги "></textarea>
             </fieldset>
-            <button type="submit"> Отправить отзыв</button>
+            <button type="submit">Отправить отзыв</button>
         </form>
-
     </main>
 
     <footer class="main-footer">
@@ -145,10 +132,9 @@
                 <a href="#"></a>
             </li>
         </ul>
-
         <div class="produced">
             <p class="produced__slogan">Разработано
-                <a href="https://htmlacademy.ru/intensive/adaptive"> <img src="img/htmlacademy.svg" width="27" height="24" alt="Логотип HTML Academy"></a>
+                <a href="https://htmlacademy.ru/intensive/adaptive"><img src="img/htmlacademy.svg" width="27" height="24" alt="Логотип HTML Academy"></a>
             </p>
         </div>
     </footer>
