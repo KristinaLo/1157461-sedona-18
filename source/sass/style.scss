@@ -1,4 +1,59 @@
 @import "content.scss";
+@import "main-header.scss";
 body {
-    background: red;
+    min-width: 320px;
+    max-width: 1200px;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 30px;
+    font-family: 'PT Sans', "Arial", sans-serif;
+    color: #000000;
+    font-style: normal;
+    text-transform: uppercase;
 }
+
+@font-face {
+    font-weight: 400;
+    font-family: "PT Sans";
+    src: local("PT Sans"), url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff");
+}
+
+@font-face {
+    font-weight: 700;
+    font-family: "PT Sans";
+    src: local("PT Sans Bold"), url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
+}
+
+ol,
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+$bg-color: rgb(129,
+179,
+209);
+$tablet-width: 768px;
+$desktop-width: 1200px;
+$mp: 0px;
+$ls: none;
