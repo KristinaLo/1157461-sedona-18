@@ -1,0 +1,46 @@
+.advantage {}
+
+.advantage__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.advantage__title {
+    width: 255px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.44;
+    letter-spacing: normal;
+    text-align: center;
+}
+
+.advantage__intro {
+    width: 255px;
+}
+
+.real-city-info__slogan {
+    width: 210px;
+    height: 92px;
+    line-height: 1.5;
+}
+
+.blue-wrapper {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    width: 320px;
+    background-color: #81b3d2;
+}
+
+.gray-wrapper {
+    width: 320px;
+    background-color: #f2f2f2;
+}
+
+.real-city-info {
+    padding-left: 69px;
+    width: 210px;
+    color: #000000;
+    background-color: #fff;
+}
