@@ -1,6 +1,6 @@
-    @import "content.scss";
+    @import "fonts.scss";
     @import "main-header.scss";
-    @import "advantages.scss";
+    @import "advantage.scss";
     @import "main-footer.scss";
     @import "sedona-index-wrapper.scss";
     body {
@@ -14,18 +14,9 @@
         color: #000000;
         font-style: normal;
         text-transform: uppercase;
-    }
-
-    @font-face {
-        font-weight: 400;
-        font-family: "PT Sans";
-        src: local("PT Sans"), url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff");
-    }
-
-    @font-face {
-        font-weight: 700;
-        font-family: "PT Sans";
-        src: local("PT Sans Bold"), url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
+        background-image: url("../img/preview/sedona-index-mobile.jpg");
+        background-repeat: no-repeat;
+        background-position: 0 -223px;
     }
 
     ol,

@@ -1,6 +1,7 @@
 .main-header {
-    position: relative;
     width: 320px;
+    height: 56px;
+    position: relative;
 }
 
 .main-header__item {
@@ -10,11 +11,32 @@
     background-color: #81b3d2;
     display: flex;
     justify-content: center;
-    a {
-        font-size: 18px;
-        font-weight: bold;
-        line-height: 2.22;
-        color: #ffffff;
-        text-decoration: none;
-    }
+}
+
+.main-header a {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 2.22;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.main-header__list {
+    display: none;
+}
+
+.main-header__logo {
+    position: absolute;
+    left: 110px;
+    z-index: 1;
+}
+
+.main-header__toggle {
+    position: absolute;
+    width: 23px;
+    height: 21px;
+    top: 20px;
+    right: 20px;
+    background-color: #ffffff;
+    border: none;
 }
