@@ -23,6 +23,10 @@
 
 .main-header__list {
     display: none;
+     ::after {
+        height: 7px;
+        background-color: #81b3d2;
+    }
 }
 
 .main-header__logo {

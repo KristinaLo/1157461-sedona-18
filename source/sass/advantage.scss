@@ -1,40 +1,46 @@
-@mixin mp {
-    margin: 0;
-    padding: 0;
+.advantage {
+    width: 320px;
 }
 
 .advantage__title {
     @include mp;
+    margin-top: 40px;
     margin-left: 32px;
-    margin-top: 43px;
+    margin-bottom: 30px;
     width: 255px;
     font-size: 18px;
     font-weight: bold;
-    line-height: 1.44;
+    line-height: 1.5;
     text-align: center;
 }
 
 .advantage__intro {
     @include mp;
-    margin-top: 26px;
+    margin-left: 31px;
+    margin-bottom: 30px;
     width: 255px;
     text-align: center;
-    span {
-        display: block;
-        text-align: center;
-    }
+    line-height: 1.44;
+}
+
+.advantage__intro span {
+    margin: 15px;
+    display: block;
+    text-align: center;
 }
 
 .advantage__list {
     margin: 0;
     padding: 0;
+    margin-top: 37px;
     list-style: none;
     text-align: center;
 }
 
-.real-city-info__slogan {
-    width: 210px;
-    height: 92px;
+.advantage__slogan {
+    @include mp;
+    margin-top: 90px;
+    width: 265px;
     line-height: 1.5;
 }
 
@@ -52,9 +58,22 @@
 }
 
 .real-city-info {
-    padding-left: 69px;
-    width: 210px;
+    @include mp;
+    width: 355px;
     color: #000000;
     background-color: #ffffff;
     text-align: left;
+}
+
+.real-city-info__item {
+    padding-top: 27px;
+    padding-left: 69px;
+    width: 250px;
+}
+
+.real-city-info__slogan {
+    margin-top: 38px;
+    width: 210px;
+    height: 92px;
+    line-height: 1.5;
 }

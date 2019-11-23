@@ -3,6 +3,7 @@
     @import "advantage.scss";
     @import "main-footer.scss";
     @import "sedona-index-wrapper.scss";
+    @import "photo.scss";
     body {
         min-width: 320px;
         max-width: 1200px;
@@ -14,23 +15,20 @@
         color: #000000;
         font-style: normal;
         text-transform: uppercase;
-        background-image: url("../img/preview/sedona-index-mobile.jpg");
-        background-repeat: no-repeat;
-        background-position: 0 -223px;
     }
-
+    
     ol,
     ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
     }
-
+    
     img {
         max-width: 100%;
         height: auto;
     }
-
+    
     .visually-hidden {
         position: absolute;
         width: 1px;
