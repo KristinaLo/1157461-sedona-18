@@ -1,6 +1,5 @@
 .main-header {
     width: 320px;
-    height: 56px;
     position: relative;
 }
 
@@ -22,7 +21,7 @@
 }
 
 .main-header__list {
-    display: none;
+    z-index: 2;
      ::after {
         height: 7px;
         background-color: #81b3d2;
