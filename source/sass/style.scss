@@ -5,8 +5,7 @@
     @import "sedona-index-wrapper.scss";
     @import "photo.scss";
     body {
-        min-width: 320px;
-        max-width: 1200px;
+        max-width: 320px;
         margin: 0;
         padding: 0;
         font-size: 14px;
@@ -16,19 +15,19 @@
         font-style: normal;
         text-transform: uppercase;
     }
-    
+
     ol,
     ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
     }
-    
+
     img {
         max-width: 100%;
         height: auto;
     }
-    
+
     .visually-hidden {
         position: absolute;
         width: 1px;
