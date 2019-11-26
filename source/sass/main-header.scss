@@ -30,10 +30,6 @@
 
 .main-header__list {
     z-index: 2;
-    &::after {
-        height: 7px;
-        background-color: #81b3d2;
-    }
 }
 
 .main-header__logo {
