@@ -3,14 +3,6 @@
     position: relative;
 }
 
-.main-header__list::after {
-    content: "";
-    width: 320px;
-    height: 55px;
-    bottom: -55px;
-    background-color: #ffffff;
-}
-
 .main-header__item {
     width: 320px;
     height: 55px;
@@ -30,10 +22,6 @@
 
 .main-header__list {
     z-index: 2;
-    &::after {
-        height: 7px;
-        background-color: #81b3d2;
-    }
 }
 
 .main-header__logo {
@@ -43,17 +31,14 @@
 }
 
 .main-header__toggle {
-    position: absolute;
     width: 23px;
     height: 21px;
+    border: none;
+}
+
+.main-header__close {
+    position: absolute;
+    background-color: #81b3d2;
     top: 20px;
     right: 20px;
-    background-color: #81b3d2;
-    border: none;
-    .close {
-        position: absolute;
-        top: 240px;
-        right: 20px;
-        background-color: #a1a1a1;
-    }
 }
