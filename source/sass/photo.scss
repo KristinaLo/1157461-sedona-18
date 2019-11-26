@@ -1,0 +1,55 @@
+.main-photo {
+  position: relative;
+  width: 321px;
+  height: 158px;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: -226px -231px;
+
+  img {
+    position: absolute;
+    top: 52px;
+    left: 46px;
+  }
+}
+
+.main-text {
+  text-align: center;
+  width: 270px;
+  padding-left: 27px;
+}
+
+.main-text__slogan {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.main-text__intro {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.photo__slogan {
+  @include mp;
+  font-weight: bold;
+}
+
+.liks {
+  margin-top: 19px;
+  font-size: 14px;
+}
+
+.photo__intro {
+  font-weight: normal;
+  line-height: 1.71;
+}
+
+.author {
+  text-decoration: capitalize;
+}
+
+.photo__item {
+  @include mp;
+  margin: 20px;
+  text-align: left;
+}
