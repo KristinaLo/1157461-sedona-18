@@ -5,6 +5,7 @@
     @import "sedona-index-wrapper.scss";
     @import "photo.scss";
     @import "filter.scss";
+    @import "reservation.scss";
     body {
         max-width: 320px;
         margin: 0;
@@ -16,19 +17,19 @@
         font-style: normal;
         text-transform: uppercase;
     }
-    
+
     ol,
     ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
     }
-    
+
     img {
         max-width: 100%;
         height: auto;
     }
-    
+
     .visually-hidden {
         position: absolute;
         width: 1px;

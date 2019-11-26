@@ -1,12 +1,129 @@
-.main-header__burger {
-    position: relative;
-    width: 320px;
-    height: 56px;
-    background-color: #ffffff;
+.filter__fieldset {
+    border: none;
+    @include mp;
+    margin-left: 20px;
+    max-width: 320px;
 }
 
-.main-header__open {
-    position: absolute;
-    top: 18px;
-    right: 20px;
+legend {
+    margin-top: 50px;
+    margin-bottom: 26px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.filter__fieldset label {
+    padding-top: 20px;
+    padding-right: 14px;
+    line-height: 1.86;
+}
+
+.fieldset-contact input,
+.fieldset-name input {
+    width: 192px;
+    height: 58px;
+    padding-left: 22px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+    background-color: #f2f2f2;
+    border: none;
+}
+
+.fieldset-name__item {
+    @include mp;
+    display: flex;
+    max-width: 280px;
+}
+
+.fieldset-contact label {
+    @include mp;
+    padding-left: 42px;
+    margin-bottom: 14px;
+}
+
+.fieldset-contact input {
+    width: 280px;
+}
+
+.fieldset-opinion__item {
+    @include mp;
+    display: flex;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    text-transform: none;
+}
+
+.fieldset-opinion__item input {
+    margin-bottom: 23px;
+    width: 46px;
+    height: 46px;
+    border: solid 5px #f2f2f2;
+    background-color: #f2f2f2;
+}
+
+.fieldset-opinion label {
+    @include mp;
+    padding-top: 10px;
+    padding-left: 27px;
+}
+
+.fieldset-attractions__item {
+    display: flex;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    text-transform: none;
+}
+
+.fieldset-attractions input {
+    margin-bottom: 34px;
+    width: 46px;
+    height: 46px;
+    border: solid 5px #f2f2f2;
+    background-color: #f2f2f2;
+}
+
+.fieldset-attractions label {
+    padding-top: 10px;
+    padding-left: 27px;
+}
+
+.fieldset-emotion label {
+    @include mp;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 34px;
+}
+
+.fieldset-emotion textarea {
+    @include mp;
+    margin-top: 21px;
+    margin-bottom: 51px;
+    padding-top: 22px;
+    padding-left: 21px;
+    width: 279px;
+    height: 160px;
+    background-color: #f2f2f2;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: none;
+}
+
+.filter__button {
+    @include mp;
+    margin-left: 20px;
+    width: 280px;
+    height: 58px;
+    background-color: #81b3d2;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1.24;
+    text-align: center;
+    color: #ffffff;
+    border: none;
 }

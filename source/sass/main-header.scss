@@ -30,6 +30,20 @@
     z-index: 1;
 }
 
+.main-header__burger {
+    position: relative;
+    width: 320px;
+    height: 56px;
+    background-color: #ffffff;
+}
+
+.main-header__open {
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    background-color: #ffffff;
+}
+
 .main-header__toggle {
     width: 23px;
     height: 21px;

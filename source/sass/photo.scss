@@ -11,7 +11,7 @@
             left: 46px;
         }
     }
-    
+
     .main-text {
         text-align: center;
         width: 270px;
@@ -25,28 +25,40 @@
             font-weight: normal;
         }
     }
-    
+
     .photo__slogan {
         @include mp;
         font-weight: bold;
     }
-    
+
     .liks {
         margin-top: 19px;
         font-size: 14px;
     }
-    
+
     .photo__intro {
         font-weight: normal;
         line-height: 1.71;
     }
-    
+
     .author {
-        text-decoration: capitalize;
+        text-decoration: none;
     }
-    
+
     .photo__item {
         @include mp;
         margin: 20px;
         text-align: left;
+    }
+
+    .video__slogan {
+        font-size: 18px;
+        font-weight: bold;
+        margin-left: 80px;
+    }
+
+    .video__intro {
+        margin-left: 43px;
+        line-height: 1.71;
+        text-align: center;
     }
