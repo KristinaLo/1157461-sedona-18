@@ -1,98 +1,85 @@
 <!DOCTYPE html>
 <html lang="ru">
-<<<<<<< HEAD
-
 <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-</head>
-
-<body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
-</body>
-
-=======
-
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>City of Sedona</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
 </head>
-
 <body>
     <header class="main-header">
-        <img src="https://via.placeholder.com/150x150" class="main-header__logo logo" width="154" height="64" alt="Логотип города Седона">
         <nav class="main-header__navigation">
-            <button type="button" class="main-header__toggle"> <span class="visually-hidden">Открыть меню</span></button>
             <ul class="main-header__list">
                 <li class="main-header__item">
-                    <a href="index.html">Главная</a>
+                    <a class="main-header__link">Главная</a>
                 </li>
                 <li class="main-header__item">
-                    <a href="photo.html">Фото и видео</a>
+                    <a href="photo.html" class="main-header__link">Фото и видео</a>
                 </li>
                 <li class="main-header__item">
-                    <a href="form.html">Форма отзыва</a>
+                    <a href="form.html" class="main-header__link">Форма отзыва</a>
                 </li>
                 <li class="main-header__item">
-                    <a href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
+                    <a href="https://htmlacademy.ru/intensive/adaptive" class="main-header__link">Html Academy</a>
                 </li>
             </ul>
+            <img class="main-header__logo logo" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип города Седона">
+            <button class="main-header__toggle main-header__toggle--open" type="button"> <span class="visually-hidden">Открыть меню</span></button>
+            <button class="main-header__toggle main-header__toggle--close" type="button"> <span class="visually-hidden">Закрыть меню</span></button>
         </nav>
-    </header>
 
+    </header>
     <main>
         <h1 class="visually-hidden">City of Sedona</h1>
-        <img src="https://via.placeholder.com/150x150" alt="Добро пожаловать в Седону">
+        <div class="sedona-index-wrapper">
+            <img src="img/text-sedona-index.svg" width="281" height="214" alt="Добро пожаловать в Седону">
+        </div>
         <section class="advantage">
-            <h2 class="advantage__title">СЕДОНА — небольшой городок в Аризоне, заслуживающий большего!</h2>
-            <p class="advantage__intro">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+            <div class="main-text">
+                <b class="main-text__slogan">СЕДОНА — небольшой городок в Аризоне, заслуживающий большего!</b>
+                <p class="main-text__intro">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+            </div>
             <ul class="advantage__list">
-                <li class="advantage__item">
+                <li class="advantage__item blue-wrapper">
                     <b class="advantage__slogan">НАСТОЯЩИЙ ГОРОДОК</b>
-                    <p class="advantage__intro">— №1 — седона не аттракцион для туристов, там течет своя жизнь
-                    </p> <img src="https://via.placeholder.com/150x150" alt="Фото дома">
-                    <div class="real-city-info">
-                        <ul class="real-city-info__list">
-                            <li class="real-city-info__item">
-                                <b class="real-city-info__slogan">Жилье </b>
-                                <p class="real-city-info__intro">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-                            </li>
-                            <li class="real-city-info-list__item">
-                                <b class="real-city-info__slogan">Сувениры</b>
-                                <p class="real-city-info__intro">Не только китайского, но и местного производства! </p>
-                            </li>
-                            <li class="real-city-info-list__item">
-                                <b class="real-city-info__slogan">Еда</b>
-                                <p class="real-city-info__intro">Всегда заказывайте фирменный бургер, Вы не разочаруетесь! </p>
-                            </li>
-                        </ul>
-                    </div>
+                    <p class="advantage__intro"> <span> — №1 — </span> седона не аттракцион для туристов, там течет своя жизнь</p>
+                    <img src="img/main-city-mobile@1x.jpg" alt="Фото дома">
+                    <ul class="real-city-info">
+                        <li class="real-city-info__item">
+                            <b class="real-city-info__slogan">Жилье </b>
+                            <p class="real-city-info__intro">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                        </li>
+                        <li class="real-city-info__item">
+                            <b class="real-city-info__slogan">Сувениры</b>
+                            <p class="real-city-info__intro">Не только китайского, но и местного производства!</p>
+                        </li>
+                        <li class="real-city-info__item">
+                            <b class="real-city-info__slogan">Еда</b>
+                            <p class="real-city-info__intro">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+                        </li>
+                    </ul>
                 </li>
-                <li class="advantage__item">
+                <li class="advantage__item blue-wrapper">
                     <b class="advantage__slogan">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</b>
-                    <p class="advantage__intro"> — №2 — Да, по нему можно пройти! Если вы осмелитесь, конечно
-                    </p> <img src="https://via.placeholder.com/150x150" alt="Мост дьявола">
+                    <p class="advantage__intro"><span> — №2 — </span> Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+                    <img src="img/main-bridge-mobile@1x.jpg" alt="Мост дьявола">
                 </li>
-                <li class="advantage__item">
+                <li class="advantage__item gray-wrapper">
                     <b class="advantage__slogan">НЕБОЛЬШАЯ ПЛОЩАДЬ</b>
-                    <p class="advantage__intro">— №3 — ВСЕ интересные места находятся очень близко
-                    </p>
+                    <p class="advantage__intro"><span> — №3 — </span> ВСЕ интересные места находятся очень близко</p>
                 </li>
-                <li class="advantage__item">
+                <li class="advantage__item gray-wrapper">
                     <b class="advantage__slogan">КРАСИВАЯ ДОРОГА</b>
-                    <p class="advantage__intro">— №4 — ехать в Седону из Лас-Вегаса совсем не скучно!
-                    </p>
+                    <p class="advantage__intro"><span> — №4 — </span> ехать в Седону из Лас-Вегаса совсем не скучно!</p>
                 </li>
-                <li class="advantage__item">
+                <li class="advantage__item gray-wrapper">
                     <b class="advantage__slogan">МАЛО ТУРИСТОВ</b>
-                    <p class="advantage__intro">— №5 — Большинство едет в гранд каньон и толпится там</p>
+                    <p class="advantage__intro"><span> — №5 — </span> Большинство едет в гранд каньон и толпится там</p>
                 </li>
             </ul>
         </section>
         <section class="reservation">
-            <h2>Заинтересовались?</h2>
+            <b>Заинтересовались?</b>
             <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
             <a href="#">Найти гостиницу</a>
             <img src="https://via.placeholder.com/150x150" alt="Карта">
@@ -118,6 +105,4 @@
         </div>
     </footer>
 </body>
-
->>>>>>> 704b0489528dabefabecabade75a182e087e167d
 </html>
