@@ -1,44 +1,45 @@
-    @import "fonts.scss";
-    @import "main-header.scss";
-    @import "advantage.scss";
-    @import "main-footer.scss";
-    @import "sedona-index-wrapper.scss";
-    @import "photo.scss";
-    @import "filter.scss";
-    @import "reservation.scss";
-    body {
-        max-width: 320px;
-        margin: 0;
-        padding: 0;
-        font-size: 14px;
-        line-height: 30px;
-        font-family: 'PT Sans', "Arial", sans-serif;
-        color: #000000;
-        font-style: normal;
-        text-transform: uppercase;
-    }
+@import "fonts.scss";
+@import "main-header.scss";
+@import "advantage.scss";
+@import "main-footer.scss";
+@import "sedona-index-wrapper.scss";
+@import "photo.scss";
+@import "filter.scss";
+@import "reservation.scss";
 
-    ol,
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-    }
+body {
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 14px;
+  line-height: 30px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: #000000;
+  font-style: normal;
+  text-transform: uppercase;
+}
 
-    img {
-        max-width: 100%;
-        height: auto;
-    }
+ol,
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 
-    .visually-hidden {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        margin: -1px;
-        border: 0;
-        padding: 0;
-        white-space: nowrap;
-        clip-path: inset(100%);
-        clip: rect(0 0 0 0);
-        overflow: hidden;
-    }
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
