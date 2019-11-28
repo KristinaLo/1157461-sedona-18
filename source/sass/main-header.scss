@@ -37,22 +37,19 @@
   background-color: #ffffff;
 }
 
-.main-header__open {
-  position: absolute;
-  top: 18px;
-  right: 20px;
-  background-color: #ffffff;
-}
-
 .main-header__toggle {
+  position: absolute;
   width: 23px;
   height: 21px;
+  top: 20px;
+  right: 20px;
+  background-color: #81b3d2;
   border: none;
 }
 
-.main-header__close {
+.main-header__toggle--close {
   position: absolute;
-  background-color: #81b3d2;
-  top: 20px;
+  top: 240px;
   right: 20px;
+  background-color: #a1a1a1;
 }
