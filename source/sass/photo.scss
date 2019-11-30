@@ -13,22 +13,6 @@
   }
 }
 
-.main-text {
-  text-align: center;
-  width: 270px;
-  padding-left: 27px;
-}
-
-.main-text__slogan {
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.main-text__intro {
-  font-size: 14px;
-  font-weight: normal;
-}
-
 .photo__slogan {
   @include mp;
   font-weight: bold;
@@ -45,11 +29,23 @@
 }
 
 .author {
-  text-decoration: capitalize;
+  text-transform: none;
 }
 
 .photo__item {
   @include mp;
   margin: 20px;
   text-align: left;
+}
+
+.video {
+  text-align: center;
+}
+
+.video__slogan {
+  font-size: 18px;
+}
+
+.video__intro {
+  line-height: 1.71;
 }
