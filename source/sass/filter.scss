@@ -1,7 +1,10 @@
-.filter__fieldset {
-  border: none;
-  @include mp;
+.filter {
   margin-left: 20px;
+}
+
+.filter__fieldset {
+  @include mp;
+  border: none;
   max-width: 320px;
 }
 
@@ -23,7 +26,6 @@ legend {
 .fieldset-name input {
   width: 192px;
   height: 58px;
-  padding-left: 22px;
   margin-bottom: 20px;
   font-size: 18px;
   font-weight: bold;
@@ -40,7 +42,6 @@ legend {
 
 .fieldset-contact label {
   @include mp;
-  padding-left: 42px;
   margin-bottom: 14px;
 }
 
@@ -68,7 +69,6 @@ legend {
 .fieldset-opinion label {
   @include mp;
   padding-top: 10px;
-  padding-left: 27px;
 }
 
 .fieldset-attractions__item {
@@ -89,14 +89,12 @@ legend {
 
 .fieldset-attractions label {
   padding-top: 10px;
-  padding-left: 27px;
 }
 
 .fieldset-emotion label {
   @include mp;
   font-size: 18px;
   font-weight: bold;
-  padding-left: 34px;
 }
 
 .fieldset-emotion textarea {
@@ -105,8 +103,9 @@ legend {
   margin-bottom: 51px;
   padding-top: 22px;
   padding-left: 21px;
-  width: 279px;
-  height: 160px;
+  padding-right: 33px;
+  width: 226px;
+  height: 148px;
   background-color: #f2f2f2;
   border: none;
   font-size: 18px;
@@ -116,14 +115,12 @@ legend {
 
 .filter__button {
   @include mp;
-  margin-left: 20px;
   width: 280px;
   height: 58px;
   background-color: #81b3d2;
   font-size: 21px;
   font-weight: bold;
   line-height: 1.24;
-  text-align: center;
   color: #ffffff;
   border: none;
 }
