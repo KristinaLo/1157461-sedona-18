@@ -15,7 +15,6 @@
 .advantage__intro {
   @include mp;
   margin-bottom: 30px;
-  width: 255px;
   line-height: 1.44;
 }
 
@@ -69,4 +68,147 @@
   width: 210px;
   height: 92px;
   line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+  .advantage {
+    min-width: 768px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .main-text {
+    min-width: 490px;
+    justify-content: center;
+  }
+
+  .advantage__item:not(.gray-wrapper) {
+    min-width: 680px;
+    display: flex;
+  }
+
+  .advantage__item img {
+    min-width: 512px;
+    height: auto;
+  }
+
+  .real-city-info {
+    display: flex;
+    width: 680px;
+    justify-content: space-between;
+  }
+
+  .real-city-info__item {
+    text-align: center;
+  }
+
+  .gray-wrapper__list {
+    display: flex;
+    justify-content: space-between;
+    width: 680px;
+  }
+
+  .gray-wrapper {
+    width: 156px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .advantage {
+    min-width: 1200px;
+  }
+
+  .main-text {
+    width: 1200px;
+    height: 100px;
+    padding: 0;
+    padding-top: 50px;
+    padding-bottom: 55px;
+    margin: 0;
+    align-items: center;
+    background-color: #ffffff;
+  }
+
+  .main-text__slogan {
+    font-size: 21px;
+    width: 490px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .main-text__intro {
+    @include mp;
+    line-height: 1.86;
+    text-align: center;
+    padding-bottom: 40px;
+  }
+
+  .advantage__list {
+    @include mp;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .advantage__item:not(.gray-wrapper) {
+    width: 1200px;
+    height: 256px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .advantage__slogan {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .advantage__item img {
+    min-width: 800px;
+    height: auto;
+  }
+
+  .real-city-info {
+    @include mp;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .real-city-info__item {
+    padding-top: 60px;
+    padding-bottom: 85px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .real-city-info__item:nth-child(2) {
+    order: 1;
+  }
+
+  .real-city-info__intro {
+    width: 283px;
+  }
+
+  .gray-wrapper__list {
+    @include mp;
+    background-color: #f2f2f2;
+    min-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .gray-wrapper {
+    padding-top: 50px;
+    padding-bottom: 70px;
+    text-align: center;
+    align-items: center;
+  }
 }

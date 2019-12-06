@@ -24,8 +24,13 @@
           <a href="https://htmlacademy.ru/intensive/adaptive" class="main-header__link">Html Academy</a>
         </li>
       </ul>
-      <img class="main-header__logo logo" src="img/logo-sedona-mobile.svg" width="102" height="83"
-        alt="Логотип города Седона">
+      <picture>
+        <source srcset="img/logo-sedona-desktop.svg" media="(min-width: 1200px)">
+          <source srcset="img/logo-sedona-tablet.svg" media="(min-width: 786px)">
+            <img class="main-header__logo logo" src="img/logo-sedona-mobile.svg" width="102" height="83"
+            alt="Логотип города Седона">
+    </picture>
+
       <div class="main-header__burger">
         <button class="main-header__toggle main-header__toggle--close visually-hidden" type="button"> <span
             class="visually-hidden">Закрыть меню</span></button>
@@ -35,7 +40,7 @@
   <main>
     <h1 class="visually-hidden">City of Sedona</h1>
     <div class="sedona-index-wrapper">
-      <img src="img/text-sedona-index.svg" width="281" height="214" alt="Добро пожаловать в Седону">
+      <img src="img/text-sedona-index.svg" alt="Добро пожаловать в Седону">
     </div>
     <section class="advantage">
       <h2 class="visually-hidden">Преимущества</h2>
@@ -47,8 +52,13 @@
         <li class="advantage__item blue-wrapper">
           <b class="advantage__slogan">НАСТОЯЩИЙ ГОРОДОК</b>
           <p class="advantage__intro"> <span> — №1 — </span> седона не аттракцион для туристов, там течет своя жизнь</p>
-          <img src="img/main-city-mobile@1x.jpg" alt="Фото дома">
-          <ul class="real-city-info">
+          <picture>
+              <source srcset="img/main-city-desktop.jpg" media="(min-width: 1200px)">
+                <source srcset="img/main-city-tablet.jpg" media="(min-width: 786px)">
+                <img src="img/main-city-mobile.jpg" alt="Фото дома">
+          </picture>
+        </li>
+          <ul class="advantage__list real-city-info">
             <li class="real-city-info__item">
               <b class="real-city-info__slogan">Жилье </b>
               <p class="real-city-info__intro">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
@@ -62,24 +72,29 @@
               <p class="real-city-info__intro">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
             </li>
           </ul>
-        </li>
         <li class="advantage__item blue-wrapper">
           <b class="advantage__slogan">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</b>
           <p class="advantage__intro"><span> — №2 — </span> Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-          <img src="img/main-bridge-mobile@1x.jpg" alt="Мост дьявола">
+          <picture>
+              <source srcset="img/main-bridge-desktop.jpg" media="(min-width: 1200px)">
+                <source srcset="img/main-bridge-tablet.jpg" media="(min-width: 786px)">
+                    <img src="img/main-bridge-mobile.jpg" alt="Мост дьявола">
+          </picture>
         </li>
-        <li class="advantage__item gray-wrapper">
-          <b class="advantage__slogan">НЕБОЛЬШАЯ ПЛОЩАДЬ</b>
-          <p class="advantage__intro"><span> — №3 — </span> ВСЕ интересные места находятся очень близко</p>
-        </li>
-        <li class="advantage__item gray-wrapper">
-          <b class="advantage__slogan">КРАСИВАЯ ДОРОГА</b>
-          <p class="advantage__intro"><span> — №4 — </span> ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-        </li>
-        <li class="advantage__item gray-wrapper">
-          <b class="advantage__slogan">МАЛО ТУРИСТОВ</b>
-          <p class="advantage__intro"><span> — №5 — </span> Большинство едет в гранд каньон и толпится там</p>
-        </li>
+        <ul class="advantage__list gray-wrapper__list">
+          <li class="advantage__item gray-wrapper">
+            <b class="advantage__slogan">НЕБОЛЬШАЯ ПЛОЩАДЬ</b>
+            <p class="advantage__intro"><span> — №3 — </span> ВСЕ интересные места находятся очень близко</p>
+          </li>
+          <li class="advantage__item gray-wrapper">
+            <b class="advantage__slogan">КРАСИВАЯ ДОРОГА</b>
+            <p class="advantage__intro"><span> — №4 — </span> ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
+          <li class="advantage__item gray-wrapper">
+            <b class="advantage__slogan">МАЛО ТУРИСТОВ</b>
+            <p class="advantage__intro"><span> — №5 — </span> Большинство едет в гранд каньон и толпится там</p>
+          </li>
+        </ul>
       </ul>
     </section>
     <section class="reservation">
@@ -88,28 +103,33 @@
       <p class="reservation__intro">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
         седоне</p>
       <a class="reservation__link" href="#">Найти гостиницу</a>
-      <img src="img/bg-map-mobile@1x.jpg" width="320" height="350" alt="Карта">
-    </section>
+      <picture>
+          <source srcset="img/bg-map-desktop.jpg" media="(min-width: 1200px)">
+            <source srcset="img/bg-map-tablet.jpg" media="(min-width: 786px)">
+              <img src="img/bg-map-mobile.jpg" width="320" height="350" alt="Карта">
+            </section>
+      </picture>
+
   </main>
   <footer class="main-footer">
     <p class="main-footer__slogan">#Visitsedona</p>
-      <ul class="main-footer__socials-list">
-        <li class="main-footer__item">
-          <a href="#"></a>
-        </li>
-        <li class="main-footer__item">
-          <a href="#"></a>
-        </li>
-        <li class="main-footer__item">
-          <a href="#"></a>
-        </li>
-      </ul>
-      <div class="produced">
-        <p class="produced__slogan">Разработано
-          <a href="https://htmlacademy.ru/intensive/adaptive"></a>
-        </p>
-      </div>
-    </footer>
+    <ul class="main-footer__socials-list">
+      <li class="main-footer__item">
+        <a href="#"></a>
+      </li>
+      <li class="main-footer__item">
+        <a href="#"></a>
+      </li>
+      <li class="main-footer__item">
+        <a href="#"></a>
+      </li>
+    </ul>
+    <div class="produced">
+      <p class="produced__slogan">Разработано
+        <a href="https://htmlacademy.ru/intensive/adaptive"></a>
+      </p>
+    </div>
+  </footer>
 </body>
 
 </html>

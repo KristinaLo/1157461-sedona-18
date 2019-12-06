@@ -1,37 +1,42 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-  <head>
-    <title>City of Sedona</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
+<head>
+  <title>City of Sedona</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
 <body>
-  <header class="main-header">
-    <nav class="main-header__navigation">
-      <ul class="main-header__list">
-        <li class="main-header__item">
-          <a href="index.html" class="main-header__link">Главная</a>
-        </li>
-        <li class="main-header__item">
-          <a class="main-header__link">Фото и видео</a>
-        </li>
-        <li class="main-header__item">
-          <a href="form.html" class="main-header__link">Форма отзыва</a>
-        </li>
-        <li class="main-header__item">
-          <a href="https://htmlacademy.ru/intensive/adaptive" class="main-header__link">Html Academy</a>
-        </li>
-      </ul>
-      <img class="main-header__logo logo" src="img/logo-sedona-mobile.svg" width="102" height="83"
-        alt="Логотип города Седона">
-      <div class="main-header__burger">
-        <button class="main-header__toggle main-header__toggle--close visually-hidden" type="button"> <span
-            class="visually-hidden">Закрыть меню</span></button>
-      </div>
-    </nav>
-  </header>
+    <header class="main-header">
+        <nav class="main-header__navigation">
+          <ul class="main-header__list">
+            <li class="main-header__item">
+              <a class="main-header__link">Главная</a>
+            </li>
+            <li class="main-header__item">
+              <a href="photo.html" class="main-header__link">Фото и видео</a>
+            </li>
+            <li class="main-header__item">
+              <a href="form.html" class="main-header__link">Форма отзыва</a>
+            </li>
+            <li class="main-header__item">
+              <a href="https://htmlacademy.ru/intensive/adaptive" class="main-header__link">Html Academy</a>
+            </li>
+          </ul>
+          <picture>
+            <source srcset="img/logo-sedona-desktop.svg" media="(min-width: 1200px)">
+              <source srcset="img/logo-sedona-tablet.svg" media="(min-width: 786px)">
+                <img class="main-header__logo logo" src="img/logo-sedona-mobile.svg" width="102" height="83"
+                alt="Логотип города Седона">
+        </picture>
+
+          <div class="main-header__burger">
+            <button class="main-header__toggle main-header__toggle--close visually-hidden" type="button"> <span
+                class="visually-hidden">Закрыть меню</span></button>
+          </div>
+        </nav>
+      </header>
   <main>
     <h1 class="visually-hidden">Фото и видео</h1>
     <h2 class="visually-hidden">Фото</h2>
@@ -47,26 +52,49 @@
       </div>
       <ul class="photo__list">
         <li class="photo__item">
-          <a href="#"><img src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Неродные просторы"></a>
+          <a href="#">
+            <picture>
+              <source srcset="img/photo-sunset-desktop.jpg" media="(min-width: 1200px)">
+              <source srcset="img/photo-sunset-tablet.jpg" media="(min-width: 786px)">
+              <img src="img/photo-sunset-mobile.jpg" width="280" height="280" alt="Неродные просторы">
+            </picture>
+          </a>
           <p class="photo__slogan"> Неродные просторы </p>
           <b class="photo__intro author">Автор фото: Борис</b>
           <p class="photo__slogan liks">1350</p>
         </li>
         <li class="photo__item">
-          <a href="#"><img src="img/photo-cactus-mobile@1x.jpg" width="280" height="280"
-              alt="Местная растительность"></a>
+          <a href="#">
+            <picture>
+              <source srcset="img/photo-cactus-desktop.jpg" media="(min-width: 1200px)">
+              <source srcset="img/photo-cactus-tablet.jpg" media="(min-width: 786px)">
+              <img src="img/photo-cactus-mobile.jpg" width="280" height="280" alt="Местная растительность">
+            </picture>
+          </a>
           <p class="photo__slogan">Местная растительность </p>
           <b class="photo__intro author">Автор фото: Сергей</b>
           <p class="photo__slogan liks">143</p>
         </li>
         <li class="photo__item">
-          <a href="#"><img src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Дорога на север"></a>
+          <a href="#">
+            <picture>
+              <source srcset="img/photo-roads-desktop.jpg" media="(min-width: 1200px)">
+              <source srcset="img/photo-roads-tablet.jpg" media="(min-width: 786px)">
+              <img src="img/photo-roads-mobile.jpg" width="280" height="280" alt="Дорога на север">
+            </picture>
+          </a>
           <p class="photo__slogan"> Дорога на север </p>
           <b class="photo__intro author">Автор фото: Петр</b>
           <p class="photo__slogan liks">96</p>
         </li>
         <li class="photo__item">
-          <a href="#"><img src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Мост дьявола"></a>
+          <a href="#">
+            <picture>
+              <source srcset="img/photo-bridge-desktop.jpg" media="(min-width: 1200px)">
+              <source srcset="img/photo-bridge-tablet.jpg" media="(min-width: 786px)">
+              <img src="img/photo-bridge-mobile.jpg" width="280" height="280" alt="Мост дьявола">
+            </picture>
+          </a>
           <p class="photo__slogan"> Мост дьявола</p>
           <b class="photo__intro author">Автор фото: Антон</b>
           <p class="photo__slogan liks">254</p>
@@ -78,7 +106,7 @@
       <b class="video__slogan">Все еще сомневаетесь?</b>
       <p class="video__intro">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
       </p>
-      <img src="img/video-mobile@1x.jpg" width="321" height="201" alt="Видео-презентация">
+      <img src="img/video-mobile.jpg" width="321" height="201" alt="Видео-презентация">
       <div>
         <!-- псевдоэлементы -->
       </div>
