@@ -9,7 +9,9 @@
 @import "reservation.scss";
 
 body {
+  margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-size: 14px;
   line-height: 30px;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -38,4 +40,10 @@ a {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 32px;
 }
