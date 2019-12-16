@@ -1,0 +1,60 @@
+.real-city-info {
+  @include reset-list;
+  color: #000000;
+  background-color: #ffffff;
+  padding-top: 27px;
+  padding-bottom: 40px;
+}
+
+.real-city-info__slogan {
+  margin-top: 38px;
+  line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+  .real-city-info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .real-city-info__item:last-child {
+    order: 2;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+
+  .real-city-info__item:nth-child(2) {
+    order: 3;
+  }
+
+  .real-city-info__item {
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .real-city-info {
+    @include reset-list;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .real-city-info__item {
+    padding-top: 60px;
+    padding-bottom: 85px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .real-city-info__item:nth-child(2) {
+    order: 1;
+  }
+
+  .real-city-info__intro {
+    width: 283px;
+  }
+}

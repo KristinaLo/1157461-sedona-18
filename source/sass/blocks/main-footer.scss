@@ -17,7 +17,7 @@
 }
 
 .main-footer__socials-list {
-  @include mp;
+  @include reset-list;
 }
 
 @media (min-width: 768px) {
@@ -26,7 +26,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 768px;
     margin-top: 0;
   }
 

@@ -42,101 +42,101 @@
     <div class="main-photo">
       <img src="img/sedona.svg" width="229" height="39" alt="Sedona">
     </div>
-    <div class="main-text">
-      <b class="main-text__slogan"> Оставьте свой отзы</b>
-      <p class="main-text__intro"> Помогите нашим отелям стать лучше! <span> оставьте отзыв о них, а также о посещенных
-          вами достопримечательностях</span> </p>
+    <div class="main-text container">
+      <b class="main-text__slogan"> Оставьте свой отзыв</b>
+      <p class="main-text__intro--form"> Помогите нашим отелям стать лучше!оставьте отзыв о них, а также о посещенных
+          вами достопримечательностях</p>
     </div>
-    <form class="filter" action="https://echo.htmlacademy.ru" method="post">
-      <fieldset class="filter__fieldset fieldset-name">
+    <form class="form" action="https://echo.htmlacademy.ru" method="post">
+      <fieldset class="form__fieldset fieldset-name">
         <legend>Представьтесь:</legend>
-        <ul class="filter__list fieldset-name__list">
-          <li class="filter__item fieldset-name__item">
+        <ul class="form__list fieldset-name__list">
+          <li class="form__item fieldset-name__item">
             <label for="first-name">Имя*:</label>
             <input type="text" id="first-name" placeholder="Петр">
           </li>
-          <li class="filter__item fieldset-name__item">
+          <li class="form__item fieldset-name__item">
             <label for="last-name">Фамилия*:</label>
             <input type="text" id="last-name" placeholder="Иванов">
           </li>
-          <li class="filter__item fieldset-name__item">
+          <li class="form__item fieldset-name__item">
             <label for="middle-name">Отчество*:</label>
             <input type="text" id="middle-name" placeholder="Александрович">
           </li>
         </ul>
       </fieldset>
-      <fieldset class="filter__fieldset fieldset-contact">
+      <fieldset class="form__fieldset fieldset-contact">
         <legend>Контактная информация:</legend>
-        <ul class="filter__list fieldset-contact__list">
-          <li class="filter__item fieldset-contact__item">
+        <ul class="form__list fieldset-contact__list">
+          <li class="form__item fieldset-contact__item">
             <label for="phone">Контактный телефон*:</label>
             <input type="tel" name="phone" id="phone" placeholder="Введите телефон">
           </li>
-          <li class="filter__item fieldset-contact__item">
+          <li class="form__item fieldset-contact__item">
             <label for="email">Электронная почта*:</label>
             <input type="email" name="email" id="email" placeholder="Введите e-mail">
           </li>
         </ul>
       </fieldset>
-      <fieldset class="filter__fieldset fieldset-opinion">
+      <fieldset class="form__fieldset fieldset-opinion">
         <legend>Ваше общее впечатление:</legend>
-        <ul class="filter__list fieldset-opinion__list">
-          <li class="filter__item fieldset-opinion__item">
+        <ul class="form__list fieldset-opinion__list">
+          <li class="form__item fieldset-opinion__item">
             <input type="radio" name="positively" id="positively">
             <label for="positively">Скорее положительное</label>
           </li>
-          <li class="filter__item  fieldset-opinion__item">
+          <li class="form__item  fieldset-opinion__item">
             <input type="radio" name="negatively" id="negatively">
             <label for="negatively">Скорее отрицательное</label>
           </li>
-          <li class="filter__item  fieldset-opinion__item">
+          <li class="form__item  fieldset-opinion__item">
             <input type="radio" name="complicated" id="complicated">
             <label for="complicated">Затрудняюсь ответить</label>
           </li>
         </ul>
       </fieldset>
-      <fieldset class="filter__fieldset fieldset-attractions">
+      <fieldset class="form__fieldset fieldset-attractions">
         <legend>Посещенные достопримечательности:</legend>
-        <ul class="filter__list fieldset-attractions__list">
-          <li class="filter__item fieldset-attractions__item">
+        <ul class="form__list fieldset-attractions__list">
+          <li class="form__item fieldset-attractions__item">
             <input type="checkbox" name="bridge" id="bridge">
             <label for="bridge">Мост Дьявола</label>
           </li>
-          <li class="filter__item fieldset-attractions__item">
+          <li class="form__item fieldset-attractions__item">
             <input type="checkbox" name="mountain" id="mountain">
             <label for="mountain">Гора-Колокол</label>
           </li>
-          <li class="filter__item fieldset-attractions__item">
+          <li class="form__item fieldset-attractions__item">
             <input type="checkbox" name="park" id="park">
             <label for="park">Слайд-парк</label>
           </li>
-          <li class="filter__item fieldset-attractions__item">
+          <li class="form__item fieldset-attractions__item">
             <input type="checkbox" name="rocks" id="rocks">
             <label for="rocks">Красные скалы</label>
           </li>
         </ul>
       </fieldset>
-      <fieldset class="filter__fieldset fieldset-emotion">
+      <fieldset class="form__fieldset fieldset-emotion">
         <label for="emotion">Опишите свои эмоции:</label>
         <textarea name="emotion" id="emotion" cols="30" rows="10"
           placeholder="Опишите подробно все свои восторги "></textarea>
       </fieldset>
-      <section class="popup">
+      <section class="form-popup">
     <h2 class="visually-hidden">Обратная связь</h2>
-        <div class="feedback feedback-error">
-          <b class="popup__title feedback-error__title">Что-то пошло не так!</b>
-          <p class="popup__intro feedback-error__intro">
+        <div class="form-popup__feedback feedback-error">
+          <b class="form-popup__title feedback-error__title">Что-то пошло не так!</b>
+          <p class="form-popup__intro feedback-error__intro">
             Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-          <button class="button popup__button feedback-error__button" type="button" >Ок</button>
+          <button class="button form-popup__button feedback-error__button" type="button" >Ок</button>
         </div>
-        <div class="feedback feedback-sent">
-          <b class="popup__title feedback-sent__title">Ваш отзыв отправлен!</b>
-          <p class="popup__intro feedback-sent__intro">
+        <div class="form-popup__feedback feedback-sent">
+          <b class="form-popup__title feedback-sent__title">Ваш отзыв отправлен!</b>
+          <p class="form-popup__intro feedback-sent__intro">
             Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-          <button class="button popup__button feedback-sent__button" type="button" >Закрыть окно</button>
+          <button class="button form-popup__button feedback-sent__button" type="button" >Закрыть окно</button>
         </div>
       </section>
-      <button class="button filter__button" type="submit" > Отправить отзыв</button>
+      <button class="button form-popup__button" type="submit" > Отправить отзыв</button>
     </form>
   </main>
   <footer class="main-footer">

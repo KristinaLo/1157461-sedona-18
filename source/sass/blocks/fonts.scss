@@ -10,7 +10,7 @@
   src: local("PT Sans Bold"), url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
 }
 
-@mixin mp {
+@mixin reset-list {
   margin: 0;
   padding: 0;
   list-style: none;

@@ -1,0 +1,23 @@
+.fieldset-opinion__item {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+  text-transform: none;
+}
+
+.fieldset-opinion__item input {
+  margin-bottom: 23px;
+  width: 46px;
+  height: 46px;
+  border: solid 5px #f2f2f2;
+  background-color: #f2f2f2;
+}
+
+.fieldset-opinion label {
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+}
