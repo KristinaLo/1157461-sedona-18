@@ -1,5 +1,4 @@
 .main-text {
-  padding: 0;
   min-width: 320px;
   padding-bottom: 33px;
   text-align: center;
@@ -51,6 +50,8 @@
   .main-text__slogan {
     margin: 0 auto;
     font-size: 21px;
+    padding-left: 300px;
+    padding-right: 300px;
     padding-bottom: 25px;
     font-weight: bold;
   }

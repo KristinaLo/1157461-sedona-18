@@ -1,10 +1,11 @@
 @import "vars.scss";
-@import "./blocks/container.scss";
-@import "blocks/fonts.scss";
+@import "fonts.scss";
+@import "reset-list.scss";
+@import "blocks/container.scss";
+@import "blocks/main-text.scss";
 @import "blocks/main-header.scss";
 @import "blocks/sedona-index-wrapper.scss";
 @import "blocks/main-photo.scss";
-@import "blocks/main-text.scss";
 @import "blocks/main-footer.scss";
 @import "blocks/reservation.scss";
 @import "blocks/advantage.scss";
@@ -18,6 +19,7 @@
 @import "blocks/fieldset-name.scss";
 @import "blocks/fieldset-opinion.scss";
 @import "blocks/feedback.scss";
+@import "blocks/form-popup.scss";
 
 h1,
 h2,
@@ -28,7 +30,8 @@ p,
 a,
 strong,
 b,
-span {
+span,
+picture {
   margin: 0;
   padding: 0;
 }
@@ -49,6 +52,7 @@ body {
 img {
   display: block;
   max-width: 100%;
+  max-height: 100%;
   height: auto;
 }
 

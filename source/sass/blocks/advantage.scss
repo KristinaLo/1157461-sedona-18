@@ -1,7 +1,5 @@
 .advantage__intro {
   line-height: 1.44;
-  padding-top: 60px;
-  padding-bottom: 44px;
   text-align: center;
   color: #ffffff;
   background-color: $blue;
@@ -48,18 +46,16 @@
 
   .advantage__intro-wrapp {
     display: flex;
+    width: 100%;
   }
 
-  .advantage__intro-wrapp img {
+  .advantage__intro-img {
     flex-grow: 1;
   }
 
   .advantage__intro {
     flex-basis: 22%;
-  }
-
-  .advantage__intro-img {
-    order: -1;
+    padding: 40px;
   }
 
   .advantage__bridge {
@@ -72,12 +68,18 @@
   }
 
   .advantage__bridge-item {
-    padding-left: 45px;
-    padding-right: 45px;
+    padding: 32px 45px;
+    border: none;
+  }
+
+  .advantage__bridge-slogan {
+    font-size: 21px;
+    line-height: 26px;
   }
 
   .advantage__slogan {
-    display: block;
+    font-size: 21px;
+    line-height: 26px;
     max-width: 110px;
     margin: 0 auto;
   }
@@ -91,12 +93,15 @@
   }
 
   .advantage__slogan {
-    justify-content: center;
-    align-items: center;
+    display: block;
+    text-align: center;
+    max-width: 150px;
+  }
+  .advantage__intro-wrapp {
+    height: 256px;
   }
 
-  .advantage__item img {
+  .advantage__intro-img {
     min-width: 800px;
-    height: auto;
   }
 }
