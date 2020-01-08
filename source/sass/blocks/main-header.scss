@@ -66,11 +66,11 @@
     height: 56px;
   }
 
-  .main-header img {
-    min-width: 102px;
-    height: auto;
+  .main-header__logo {
+    max-height: 84px;
     top: 0;
-    left: 42%;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .main-header__list {
@@ -107,8 +107,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 1200px;
-    height: 56px;
     margin-top: 0;
   }
 
@@ -116,7 +114,6 @@
     min-width: 188px;
     height: auto;
     top: 0;
-    left: 42%;
   }
 
   .main-header__list {
@@ -143,5 +140,6 @@
   .main-header__navigation {
     width: 1200px;
     height: 56px;
+    margin: 0 auto;
   }
 }

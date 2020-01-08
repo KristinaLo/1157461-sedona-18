@@ -3,6 +3,8 @@
   text-align: center;
   color: #ffffff;
   background-color: $blue;
+  padding-top: 43px;
+  padding-bottom: 43px;
 }
 
 .advantage__intro span,
@@ -24,6 +26,8 @@
   background-color: #eeeeee;
   color: #000000;
   text-align: center;
+  padding-left: 27px;
+  padding-right: 28px;
 }
 
 .advantage__bridge-item {
@@ -39,9 +43,6 @@
 @media (min-width: 768px) {
   .advantage {
     min-width: 768px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
   }
 
   .advantage__intro-wrapp {
@@ -54,7 +55,7 @@
   }
 
   .advantage__intro {
-    flex-basis: 22%;
+    flex-basis: 256px;
     padding: 40px;
   }
 
